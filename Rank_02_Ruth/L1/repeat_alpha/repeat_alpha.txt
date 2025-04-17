@@ -1,35 +1,29 @@
-Assignment name  : rev_print
-Expected files   : rev_print.c
+Assignment name  : repeat_alpha
+Expected files   : repeat_alpha.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a function that takes a string, and displays the string in reverse
+Write a program called repeat_alpha that takes a string and display it
+repeating each alphabetical character as many times as its alphabetical index,
 followed by a newline.
 
-The original string must not be modified.
+'a' becomes 'a', 'b' becomes 'bb', 'e' becomes 'eeeee', etc...
 
-You must return the string passed as a parameter.
+Case remains unchanged.
 
-Your function must be declared as follows:
-
-char *rev_print(char *str);
+If the number of arguments is not 1, just display a newline.
 
 Examples:
 
-int main(void)
-{
-  rev_print("Hello world");
-  write (1, "\n", 1);
-  rev_print("tnirp esreveR");
-  write (1, "\n", 1);
-  rev_print("");
-  write (1, "\n", 1);
-}
-
-Output :
-$> ./a.out | cat -e
-dlrow olleH$
-$> ./a.out | cat -e
-Reverse print$
-$> ./a.out | cat -e
+$>./repeat_alpha "abc"
+abbccc
+$>./repeat_alpha "Alex." | cat -e
+Alllllllllllleeeeexxxxxxxxxxxxxxxxxxxxxxxx.$
+$>./repeat_alpha 'abacadaba 42!' | cat -e
+abbacccaddddabba 42!$
+$>./repeat_alpha | cat -e
 $
+$>
+$>./repeat_alpha "" | cat -e
+$
+$>
