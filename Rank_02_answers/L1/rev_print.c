@@ -1,4 +1,4 @@
-/*
+./*
 Assignment name  : rev_print
 Expected files   : rev_print.c
 Allowed functions: write
