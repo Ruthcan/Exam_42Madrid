@@ -1,7 +1,7 @@
-char    *ft_strcpy(char *s1, char *s2)
+char *ft_strcpy(char *s1, char *s2)
 {
     int i = 0;
-    while (s2[i])
+    while (s2[i] != '\0')
     {
         s1[i] = s2[i];
         i++;
@@ -10,7 +10,7 @@ char    *ft_strcpy(char *s1, char *s2)
     return (s1);
 }
 
-#include <stdio.h>
+#include "stdio.h"
 int main()
 {
     char s1[10];

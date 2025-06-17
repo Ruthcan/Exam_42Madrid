@@ -5,10 +5,10 @@ int ft_atoi(char *str)
     int result = 0;
     while (str[i] >= '0' && str[i] <= '9')
     {
-        result = (result * 10) + (str[i] - '0')
+        result = (result * 10) + (str[i] - '0');
         i++;
     }
-    return (result *sign);
+    return (result);
 }
 
 void dec_to_hex(int n)
@@ -19,11 +19,12 @@ void dec_to_hex(int n)
     write(1, &hex[n % 16], 1);
 }
 
-int main(int argv, char **argv)
+int main(int argc, char **argv)
 {
     if (argc == 2)
     {
         dec_to_hex(ft_atoi(argv[1]));
     }
     write (1, "\n", 1);
+    return (0);
 }
